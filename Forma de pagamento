@@ -1,0 +1,49 @@
+v = float(input("Qual valor a ser pago? "))
+print("Forma de pagamento")
+print(" ")
+print("1 - Pix")
+print(" ")
+print("2 - Cartão de crédito")
+print(" ")
+opcao = int(input("Escolha uma opção: "))
+
+if opcao == 1:
+    print("Você escolheu Pix")
+    print("Escolha o tipo de chave")
+    print("1 - Email")
+    print(" ")
+    print("2 - CPF")
+    print(" ")
+    print("3 - Telefone")
+    print(" ")
+    print("4 - Chave aleatória")
+    print(" ")
+    p = int(input("Digite um número de acordo com a opção de chave: "))
+    
+    if p == 1:
+        gm = input("Digite um email: ")
+    elif p == 2:
+        cpf = input("Digite seu CPF: ")
+    elif p == 3:
+        tel = input("Digite seu número de telefone: ")
+    elif p == 4:
+        ka = input("Digite uma chave aleatória: ")
+    else:
+        print("Digite um número válido de acordo com a opção de chave desejada")
+elif opcao == 2:
+    print("Você escolheu Cartão de Crédito")
+    n = input("Digite o número do cartão: ")
+    val = input("Digite a validade do cartão (MM/AA): ")
+    vcc = input("Digite o CVV do cartão: ")
+else:
+    print("Digite um valor válido entre 1 e 2")
+
+print("*********")
+print("Transação:")
+print(" ")
+print("Valor: " + str(v))
+
+if opcao == 1:
+    print("Forma de pagamento: Pix")
+elif opcao == 2:
+    print("Forma de pagamento: Cartão de Crédito")
